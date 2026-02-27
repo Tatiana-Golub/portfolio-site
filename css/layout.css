@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  min-height: 60px;
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: var(--color-dark);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 0;
+}

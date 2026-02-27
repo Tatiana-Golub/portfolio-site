@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .lock {
+    overflow: auto;
+  } 
+
+  .header__nav {
+    position: static;
+    transform: none;
+    height: auto;
+    width: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+
+  .nav__item {
+    padding-block: 18px;
+    padding-inline: 20px;
+  }
+
+  .burger {
+    display: none;
+  }
+}

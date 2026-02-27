@@ -4,11 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
   <link rel="icon" href="favicon.ico" />
   <title>Portfolio Site</title>
 </head>
 
 <body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__container">
+
+      <a href="index.html" class="logo header__logo">
+        <img src="./assets/icons/icon.png" alt="Site icon" class="logo__image" />
+      </a>
+
+      <nav class="nav header__nav" aria-label="Main navigation">
+        <ul class="nav__list" id="navList" role="list">
+          <li class="nav__item"><a href="" class="nav__link">ABOUT ME</a></li>
+          <li class="nav__item"><a href="" class="nav__link">PORTFOLIO</a></li>
+          <li class="nav__item"><a href="" class="nav__link">PRICE</a></li>
+          <li class="nav__item"><a href="" class="nav__link">FAQ</a></li>
+          <li class="nav__item"><a href="" class="nav__link">CONTACTS</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger header__burger" aria-label="Open menu" aria-expanded="false">
+        <span class="burger__inner">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </span>
+      </button>
+
+    </div>
+  </header>
+
 
 </body>
 
