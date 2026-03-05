@@ -40,7 +40,8 @@ ol[role='list'] {
 
 body {
     min-height: 100vh;
-    line-height: 1.5;
+    background-color: var(--color-dark);
+    margin: 0;
 }
 
 h1,
