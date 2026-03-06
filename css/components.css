@@ -256,3 +256,79 @@
 .about__quote {
   line-height: 1.5;
 }
+
+.portfolio {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.portfolio__container {
+  padding: 60px 20px;
+}
+
+.portfolio__header {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.portfolio__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.portfolio__text {
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+.portfolio__slider {
+  overflow-x: hidden;
+  margin-top: 40px;
+}
+
+.portfolio__track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 20px;
+  height: 654px;
+}
+
+.portfolio__item {
+  flex-shrink: 0;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio__item--lg {
+  width: 400px;
+  height: 534px;
+}
+
+.portfolio__item--md {
+  width: 280px;
+  height: 374px;
+}
+
+.portfolio__item--sm {
+  width: 220px;
+  height: 220px;
+}
+
+.portfolio__item--top {
+  align-self: flex-start;
+}
+
+.portfolio__item--bottom {
+  align-self: flex-end;
+}
+
