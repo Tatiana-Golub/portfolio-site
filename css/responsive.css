@@ -89,6 +89,14 @@
   .burger {
     display: none;
   }
+
+  .about__container {
+    grid-template-columns: repeat(3, 440px);
+  }
+
+  .about__image--additional {
+    display: block;
+  }
 }
 
 @media (min-width: 1360px) {

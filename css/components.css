@@ -1,8 +1,3 @@
-section {
-  max-width: 1440px;
-  margin-inline: auto;
-}
-
 .logo {
   padding: 20px;
   display: inline-flex;
@@ -213,4 +208,51 @@ section {
   font-family: var(--font-body);
   line-height: 1.5;
   align-self: flex-end;
+}
+
+.about {
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+}
+
+.about__container {
+  display: grid;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.about__image--additional {
+  display: none;
+}
+
+.about__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about__text,
+.about__quote {
+  line-height: 1.5;
 }
