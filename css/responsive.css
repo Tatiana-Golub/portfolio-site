@@ -61,6 +61,10 @@
   .hero__photo-primary {
     width: clamp(220px, 8.93vw + 151px, 280px);
   }
+
+  .price__list {
+    grid-template-columns: repeat(2, 320px);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -90,13 +94,14 @@
     display: none;
   }
 
-  .about__container {
-    grid-template-columns: repeat(3, 440px);
+   .about__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about__image--additional {
     display: block;
   }
+
 }
 
 @media (min-width: 1360px) {
@@ -108,4 +113,16 @@
     object-fit: cover;
     align-self: center;
   }
+
+  .price__list {
+    grid-template-columns: repeat(4, 320px);
+  }
+}
+
+@media (min-width: 1440px) {
+
+   .price__list {
+    gap: 40px;
+  }
+
 }
