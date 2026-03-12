@@ -17,6 +17,7 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -84,8 +85,4 @@ select {
 
 textarea:not([rows]) {
     min-height: 10em;
-}
-
-:target {
-    scroll-margin-block: 5ex;
 }

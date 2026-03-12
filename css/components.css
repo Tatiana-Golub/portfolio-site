@@ -1,3 +1,7 @@
+.lock {
+    overflow: hidden;
+  }
+
 .logo {
   padding: 20px;
   display: inline-flex;
@@ -41,6 +45,11 @@
   margin: 0;
 }
 
+.nav__item {
+  padding-block: 18px;
+  padding-inline: 20px;
+}
+
 .nav__link {
   display: inline-flex;
   align-items: center;
@@ -68,33 +77,43 @@
 }
 
 .burger__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  position: relative;
   gap: 6px;
   width: 20px;
+  height: 10px;
 }
 
 .burger__line {
+  position: absolute;
+  right: 0;
+  width: 20px;
   height: 2px;
-  background-color: var(--color-white);
+  background: var(--color-white);
+  transition: 
+    transform 0.35s ease,
+    top 0.35s ease,
+    width 0.35s ease;
+  transform-origin: center;
 }
 
 .burger__line:first-child {
+  top: 0;
   width: 12px;
 }
 
 .burger__line:last-child {
-  width: 20px;
+  bottom: 0;
 }
 
 .burger--active .burger__line:first-child {
   width: 20px;
-  transform: translateY(8px) rotate(45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .burger--active .burger__line:last-child {
-  transform: translateY(-8px) rotate(-45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .hero {
