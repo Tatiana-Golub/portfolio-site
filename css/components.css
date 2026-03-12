@@ -445,7 +445,8 @@
   font-style: italic;
 }
 
-.price-card__button {
+.price-card__button,
+.footer__button {
   width: 100%;
   height: 60px;
   background: var(--color-dark);
@@ -462,7 +463,7 @@
 }
 
 .faq__container {
-  padding: 60px 20px;
+  padding: 59px 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -566,4 +567,88 @@
 
 .faq__item[open] .faq__icon::after {
   transform: rotate(90deg);
+}
+
+.footer {
+  background: var(--color-white);
+}
+
+.footer__container {
+  padding-block: 40px 0;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.footer__field {
+  width: 100%;
+}
+
+.footer__input {
+  width: 100%;
+  height: 60px;
+  padding-inline: 12px;
+  border: 1px solid var(--color-dark);
+  background: transparent;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.footer__button {
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.footer__contacts {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--color-dark);
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__item {
+  padding-inline: 20px;
+  padding-block: 18px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.footer__link,
+.footer__text {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.footer__link:hover {
+  color: var(--color-accent);
 }
