@@ -42,6 +42,7 @@
   }
 
   .hero__scroll {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 8px;
