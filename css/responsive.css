@@ -74,11 +74,6 @@
     max-width: none;
   }
 
-  .footer__list {
-    flex-direction: row;
-    justify-content: center;
-  }
-
   .footer__field {
     max-width: 256px;
   }
@@ -87,11 +82,20 @@
     max-width: 200px;
   }
 
+  .footer__list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .modal__container {
+    padding: 60px;
+  }
+
 }
 
 @media (min-width: 1024px) {
 
-  .lock {
+  .menu-open {
     overflow: auto;
   }
 
