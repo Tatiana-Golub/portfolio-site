@@ -52,7 +52,7 @@
   justify-content: center;
   text-decoration: none;
   color: var(--color-white);
-  transition: color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav__link:hover,
@@ -539,19 +539,11 @@
   font-family: var(--font-heading);
   font-size: 1.25rem;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .faq__question::-webkit-details-marker {
   display: none;
-}
-
-.faq__question:hover {
-  color: var(--color-accent);
-}
-
-.faq__question:hover .faq__icon::before,
-.faq__question:hover .faq__icon::after {
-  background: var(--color-accent);
 }
 
 .faq__answer {
@@ -578,7 +570,7 @@
 .faq__icon::after {
   content: "";
   position: absolute;
-  background: var(--color-white);
+  background-color: currentColor;
 }
 
 .faq__icon::before {
@@ -645,6 +637,16 @@
   background: transparent;
   font-family: var(--font-heading);
   text-transform: uppercase;
+  transition: border-color 0.3s ease;
+}
+
+.form__input:hover,
+.form__input:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.form__input:focus-visible {
+  outline: none;
 }
 
 .footer__button {

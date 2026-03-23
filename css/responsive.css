@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-
   .hero__main {
     flex: 1;
     padding-bottom: 55px;
@@ -43,16 +42,20 @@
 
   .hero__scroll {
     text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 2px;
-    margin-top: 60px;
     font-family: var(--font-body);
     background: none;
     border: none;
     color: inherit;
     cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .hero__scroll:hover {
+    color: var(--color-accent);
   }
 
   .hero__intro {
@@ -90,11 +93,9 @@
   .modal__container {
     padding: 60px;
   }
-
 }
 
 @media (min-width: 1024px) {
-
   .menu-open {
     overflow: auto;
   }
@@ -140,11 +141,9 @@
   .faq__answer {
     padding-right: 24px;
   }
-
 }
 
 @media (min-width: 1360px) {
-
   .hero__photo-minor {
     display: block;
     width: 220px;
@@ -159,7 +158,6 @@
 }
 
 @media (min-width: 1440px) {
-
   .price__list {
     gap: 40px;
   }
@@ -167,11 +165,16 @@
   .footer__field {
     max-width: 380px;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {
   .portfolio__track {
     will-change: auto;
+  }
+}
+
+@media (hover: hover) {
+  .faq__question:hover {
+    color: var(--color-accent);
   }
 }
