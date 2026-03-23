@@ -81,6 +81,7 @@ function createCloseButton() {
   icon.className = 'modal__close-icon';
   icon.src = CLOSE_ICON;
   icon.alt = '';
+  icon.setAttribute('aria-hidden', 'true');
 
   button.append(icon);
 

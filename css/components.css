@@ -402,6 +402,10 @@
   min-height: 500px;
 }
 
+.price-card {
+  transition: border-color 0.3s ease;
+}
+
 .price-card:hover {
   border-color: var(--color-accent);
 }
@@ -409,11 +413,6 @@
 .price-card:hover .price-card__button {
   background: var(--color-accent);
   color: var(--color-dark);
-}
-
-.price-card,
-.price-card__button {
-  transition: all 0.3s ease;
 }
 
 .price-card__content {
@@ -439,7 +438,7 @@
 }
 
 .price-card__feature::before {
- content: "";
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -477,12 +476,16 @@
 .form__button {
   width: 100%;
   height: 60px;
-  background: var(--color-dark);
+  background-color: var(--color-dark);
   color: var(--color-white);
   border: none;
   text-transform: uppercase;
   font-family: var(--font-heading);
   cursor: pointer;
+}
+
+.price-card__button {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .faq {

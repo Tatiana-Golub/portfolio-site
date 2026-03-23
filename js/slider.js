@@ -1,7 +1,8 @@
 export function initPortfolioSlider() {
     const slider = document.querySelector('.portfolio__slider');
     const track = document.querySelector('.portfolio__track');
-
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
     if (!slider || !track) return;
 
     let position = 0;
@@ -22,6 +23,8 @@ export function initPortfolioSlider() {
     }
 
     function animate() {
+        if (prefersReducedMotion) return;
+
         if (direction !== 0) {
             position += direction * 2;
 
